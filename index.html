@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChaturaIT Learnings</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Header */
+      header {
+        font-family: "Monoton", sans-serif;
+        /* ... (existing styles) */
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+
+      /* Footer */
+      footer {
+        font-family: "Monoton", sans-serif;
+        /* ... (existing styles) */
+      }
+    </style>
+  </head>
+  <body class="bg-purple-800 text-gray-300">
+    <!-- Header -->
+    <header class="bg-purple-800 text-gray-300 p-2">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo Image -->
+        <img
+          src="./chaturaIT.png"
+          alt="Your Company Logo"
+          class="w-64 h-64 object-contain"
+        />
+
+        <!-- Mobile Menu Button with Three Lines -->
+        <button id="mobile-menu-button" class="block sm:hidden text-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="h-6 w-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden sm:block">
+          <ul class="flex space-x-4">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu (Initially Hidden) -->
+      <nav id="mobile-menu" class="hidden sm:hidden">
+        <ul class="flex flex-col space-y-2">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content with Background Color -->
+    <main>
+      <!-- Container for Content -->
+      <div class="container mx-auto p-4">
+        <!-- Home Section with Different Text Color -->
+        <!-- Home Section -->
+        <section
+          id="home"
+          class="bg-white p-8 shadow-lg rounded-lg text-purple-800 mt-4 min-h-screen"
+        >
+          <h2 class="text-4xl font-semibold mb-4">Welcome to Chatura IT</h2>
+          <p class="text-lg mt-4">
+            Enhance your programming skills with expert training in
+            <strong>C, C++, Java, Python</strong>, and master
+            <strong>Data Structures and Algorithms</strong> with us.
+          </p>
+          <p class="text-lg mt-4">
+            Whether you're a beginner or an experienced developer, our courses
+            cater to all skill levels. Join us on the journey to becoming a
+            coding expert.
+          </p>
+          <a
+            href="#courses"
+            class="bg-purple-800 text-white py-2 px-4 rounded font-semibold mt-6 inline-block hover:bg-purple-700"
+            >Explore Our Courses</a
+          >
+          <!-- Creative Content -->
+          <div class="mt-8 flex flex-wrap items-center justify-center">
+            <!-- Creative Image -->
+            <div class="w-full md:w-1/2 p-4">
+              <img
+                src="./home-image.avif"
+                alt="Creative Image"
+                class="rounded-lg shadow-lg"
+              />
+            </div>
+            <!-- Creative Text -->
+            <div class="w-full md:w-1/2 p-4">
+              <h3 class="text-3xl font-semibold mb-4">
+                Unlock Your Coding Potential
+              </h3>
+              <p class="text-lg">
+                Our expert instructors and hands-on projects will help you gain
+                the skills you need to excel in the world of programming.
+              </p>
+              <p class="text-lg mt-4">
+                Join us today and embark on a journey to become a coding expert.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Us Section (next step) -->
+        <!-- About Us Section with Similar Style -->
+        <!-- About Us Section -->
+        <section
+          id="about"
+          class="bg-white p-8 shadow-lg rounded-lg text-purple-800 mt-4 min-h-screen"
+        >
+          <h2 class="text-4xl font-semibold mb-4">About Chatura IT</h2>
+          <p class="text-lg mt-4">
+            At Chatura IT, we are passionate about helping individuals unlock
+            their full potential in the world of programming and technology.
+            With years of experience and a team of expert instructors, we offer
+            top-notch training in programming languages and computer science
+            concepts.
+          </p>
+          <p class="text-lg mt-4">
+            Our mission is to empower aspiring developers and tech enthusiasts
+            to build a strong foundation in coding, whether you're just starting
+            or looking to level up your skills. We believe that everyone has the
+            potential to become a coding expert, and we're here to guide you on
+            that journey.
+          </p>
+          <div class="mt-8 flex flex-wrap items-center justify-center">
+            <!-- Creative Image -->
+            <div class="w-full md:w-1/2 p-4">
+              <img
+                src="./teaching.avif"
+                alt="About Us Image"
+                class="rounded-lg shadow-lg"
+              />
+            </div>
+            <!-- Creative Text -->
+            <div class="w-full md:w-1/2 p-4">
+              <h3 class="text-3xl font-semibold mb-4">
+                Why Choose Chatura IT?
+              </h3>
+              <ul class="list-disc pl-4 text-lg">
+                <li>Expert Instructors with Real-World Experience</li>
+                <li>Comprehensive and Practical Curriculum</li>
+                <li>Interactive Learning Environment</li>
+                <li>Flexibility to Fit Your Schedule</li>
+                <li>Community Support and Networking Opportunities</li>
+              </ul>
+              <p class="text-lg mt-4">
+                Join us today and embark on a rewarding journey to becoming a
+                proficient coder.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Services Section with Cards -->
+        <!-- Services Section with Responsive Cards -->
+        <!-- Services Section with Enhanced Card Styling and Images -->
+        <!-- Services Section with Enhanced Card Styling and Images -->
+        <section
+          id="services"
+          class="bg-white p-8 shadow-lg rounded-lg text-purple-800 mt-4 min-h-screen"
+        >
+          <h2 class="text-4xl font-semibold mb-4">Our Services</h2>
+          <p class="text-lg mt-4">
+            At Chatura IT, we offer a wide range of training programs to help
+            you master programming languages and computer science concepts. Our
+            services are designed to cater to learners of all levels, from
+            beginners to experienced developers.
+          </p>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6"
+          >
+            <!-- Service Card 1 -->
+            <div
+              class="bg-purple-100 rounded-lg p-6 border border-purple-300 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
+            >
+              <img
+                src="./serviceimage.avif"
+                alt="Service 1 Image"
+                class="w-32 h-32 mb-4"
+              />
+              <h3 class="text-xl font-semibold mb-2 text-purple-800">
+                Comprehensive C Programming
+              </h3>
+              <p class="text-gray-700">
+                Master the fundamentals of C programming with our comprehensive
+                training.
+              </p>
+              <a
+                href="#"
+                class="text-purple-800 font-semibold mt-4 hover:underline"
+                >Learn More</a
+              >
+            </div>
+
+            <!-- Service Card 2 -->
+            <div
+              class="bg-purple-100 rounded-lg p-6 border border-purple-300 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
+            >
+              <img
+                src="./serviceimage.avif"
+                alt="Service 2 Image"
+                class="w-32 h-32 mb-4"
+              />
+              <h3 class="text-xl font-semibold mb-2 text-purple-800">
+                Advanced C++ Programming
+              </h3>
+              <p class="text-gray-700">
+                Take your C++ skills to the next level with our advanced
+                courses.
+              </p>
+              <a
+                href="#"
+                class="text-purple-800 font-semibold mt-4 hover:underline"
+                >Learn More</a
+              >
+            </div>
+
+            <!-- Service Card 3 -->
+            <div
+              class="bg-purple-100 rounded-lg p-6 border border-purple-300 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
+            >
+              <img
+                src="./serviceimage.avif"
+                alt="Service 3 Image"
+                class="w-32 h-32 mb-4"
+              />
+              <h3 class="text-xl font-semibold mb-2 text-purple-800">
+                Expert Java Programming
+              </h3>
+              <p class="text-gray-700">
+                Become an expert in Java programming with our guided training.
+              </p>
+              <a
+                href="#"
+                class="text-purple-800 font-semibold mt-4 hover:underline"
+                >Learn More</a
+              >
+            </div>
+
+            <!-- Service Card 4 -->
+            <div
+              class="bg-purple-100 rounded-lg p-6 border border-purple-300 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
+            >
+              <img
+                src="./serviceimage.avif"
+                alt="Service 4 Image"
+                class="w-32 h-32 mb-4"
+              />
+              <h3 class="text-xl font-semibold mb-2 text-purple-800">
+                Python Programming Mastery
+              </h3>
+              <p class="text-gray-700">
+                From basics to advanced topics, master Python programming.
+              </p>
+              <a
+                href="#"
+                class="text-purple-800 font-semibold mt-4 hover:underline"
+                >Learn More</a
+              >
+            </div>
+
+            <!-- Service Card 5 -->
+            <div
+              class="bg-purple-100 rounded-lg p-6 border border-purple-300 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
+            >
+              <img
+                src="./serviceimage.avif"
+                alt="Service 5 Image"
+                class="w-32 h-32 mb-4"
+              />
+              <h3 class="text-xl font-semibold mb-2 text-purple-800">
+                Data Structures and Algorithms
+              </h3>
+              <p class="text-gray-700">
+                Gain expertise in data structures and algorithms with our
+                courses.
+              </p>
+              <a
+                href="#"
+                class="text-purple-800 font-semibold mt-4 hover:underline"
+                >Learn More</a
+              >
+            </div>
+
+            <!-- Service Card 6 -->
+            <div
+              class="bg-purple-100 rounded-lg p-6 border border-purple-300 shadow-lg hover:shadow-xl transition-transform transform hover:scale-105"
+            >
+              <img
+                src="./serviceimage.avif"
+                alt="Service 6 Image"
+                class="w-32 h-32 mb-4"
+              />
+              <h3 class="text-xl font-semibold mb-2 text-purple-800">
+                Web Development Training
+              </h3>
+              <p class="text-gray-700">
+                Learn modern web development with our comprehensive courses.
+              </p>
+              <a
+                href="#"
+                class="text-purple-800 font-semibold mt-4 hover:underline"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <!-- Contact Us Section -->
+        <!-- Contact Information Section -->
+        <!-- Contact Information Section with White Background -->
+        <section
+          id="contact"
+          class="bg-white text-purple-800 p-8 shadow-lg rounded-lg mt-4"
+        >
+          <h2 class="text-4xl font-semibold mb-4">Contact Us</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+            <!-- Contact Details -->
+            <div>
+              <h3 class="text-xl font-semibold text-purple-800 mb-4">
+                Contact Details
+              </h3>
+              <p class="text-gray-700">
+                <strong>Address:</strong> 123 Main Street, City Name
+              </p>
+              <p class="text-gray-700">
+                <strong>Email:</strong> info@yourcompany.com
+              </p>
+              <p class="text-gray-700">
+                <strong>Phone:</strong> +1 (123) 456-7890
+              </p>
+              <p class="text-gray-700">
+                <strong>Business Hours:</strong> Mon-Fri, 9:00 AM - 5:00 PM
+              </p>
+            </div>
+
+            <!-- Contact Form -->
+            <div>
+              <h3 class="text-xl font-semibold text-purple-800 mb-4">
+                Send Us a Message
+              </h3>
+              <form action="#" method="post" class="grid grid-cols-1 gap-4">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  class="bg-purple-100 text-purple-800 p-2 rounded-lg"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  class="bg-purple-100 text-purple-800 p-2 rounded-lg"
+                />
+                <textarea
+                  name="message"
+                  rows="4"
+                  placeholder="Your Message"
+                  class="bg-purple-100 text-purple-800 p-2 rounded-lg"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="bg-purple-800 text-white py-2 px-4 rounded-lg hover:bg-purple-700 font-semibold transition-transform transform hover:scale-105"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-purple-800 text-gray-300 p-4 text-center">
+      <div class="container mx-auto">
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+        <p>123 Main Street, City Name</p>
+        <p>Email: info@yourcompany.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+      </div>
+    </footer>
+    <script>
+      // Get references to the mobile menu button and mobile menu
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      // Add a click event listener to the mobile menu button
+      mobileMenuButton.addEventListener("click", () => {
+        // Toggle the 'hidden' class to show/hide the mobile menu
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
